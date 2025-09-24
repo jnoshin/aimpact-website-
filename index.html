@@ -1,90 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AImpact Marketing</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AImpact Marketing — AI-Driven Marketing for U.S. Finance</title>
+  <meta name="description" content="AImpact Marketing: compliant, AI-driven marketing systems for the U.S. financial services industry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #000000;
-      text-align: center;
-      line-height: 1.6;
+    :root{
+      --bg:#FCFBF9;          /* warm white */
+      --text:#0E0E0E;        /* rich black */
+      --muted:#6E6E6E;       /* neutral gray */
+      --rule:#E6E3DE;        /* hairline rule */
+      --accent:#0E0E0E;      /* monochrome palette */
+      --max: 1020px;
     }
-    header {
-      padding: 50px 20px 20px;
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    a{color:var(--text);text-underline-offset:3px}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 22px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{letter-spacing:.22em;font-size:.85rem;color:var(--muted);font-weight:600}
+    .cta{border:1px solid var(--text);padding:8px 14px;border-radius:999px;font-size:.85rem;text-decoration:none}
+    .hero{padding:80px 0 24px}
+    .eyebrow{letter-spacing:.18em;color:var(--muted);font-size:.78rem;text-transform:uppercase}
+    h1{font-family:"Playfair Display",serif;font-weight:700;line-height:1.1;margin:.35em 0 .2em;font-size:clamp(36px,6vw,64px)}
+    .sub{max-width:760px;font-size:clamp(18px,2.2vw,22px);color:var(--text)}
+    hr{border:0;border-top:1px solid var(--rule);margin:48px 0}
+    .section-title{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(28px,3.6vw,40px);margin:0 0 12px}
+    .kicker{letter-spacing:.2em;color:var(--muted);font-size:.78rem;text-transform:uppercase;margin-bottom:8px}
+    .grid{display:grid;gap:22px}
+    @media(min-width:880px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    .card{padding:18px 0}
+    .card h3{font-size:20px;margin:0 0 6px}
+    .card p{margin:0;color:var(--text)}
+    .note{color:var(--muted);font-size:.95rem}
+    .founder{display:grid;gap:24px;align-items:start}
+    @media(min-width:880px){ .founder{grid-template-columns:220px 1fr} }
+    .avatar{
+      width:220px;height:220px;border-radius:50%;
+      background:#fff;border:1px solid var(--rule);
+      display:flex;align-items:center;justify-content:center;
+      font-family:"Playfair Display",serif;color:var(--muted)
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-top: 40px;
-      margin-bottom: 10px;
-    }
-    p {
-      max-width: 700px;
-      margin: 10px auto;
-      font-size: 1em;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 5px 0;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 0.9em;
-      border-top: 1px solid #ccc;
-    }
-    a {
-      color: #000000;
-      text-decoration: underline;
-    }
-    a:hover {
-      text-decoration: none;
-    }
+    .pill{display:inline-block;border:1px solid var(--text);padding:8px 14px;border-radius:999px;text-decoration:none;margin-right:10px}
+    footer{padding:56px 0 80px;color:var(--muted);font-size:.9rem}
   </style>
 </head>
 <body>
-  <header>
-    <h1>AImpact Marketing</h1>
-    <p>AI-driven Marketing Solutions for the U.S. Financial Industry.</p>
-    <p>
-      Learn more about me at my 
-      <a href="https://jnoshin.github.io" target="_blank">Portfolio Website</a>.
-    </p>
-  </header>
+  <div class="wrap">
+    <header>
+      <div class="brand">AIMPACT&nbsp;MARKETING</div>
+      <a class="cta" href="#contact">Say hello</a>
+    </header>
 
-  <section>
-    <h2>Services</h2>
-    <p>We provide AI-driven solutions tailored for the U.S. financial services industry:</p>
-    <ul>
-      <li><strong>Generative AI Content Engine</strong> – Persona-based, compliant, and human-in-the-loop content.</li>
-      <li><strong>Compliant Marketing Funnels</strong> – Acquisition funnels designed with FINRA/SEC compliance.</li>
-      <li><strong>Analytics Dashboards</strong> – Real-time performance tracking and insights.</li>
-    </ul>
-  </section>
+    <section class="hero">
+      <div class="eyebrow">We craft systems, not slogans</div>
+      <h1>AI-Driven Marketing for U.S. Financial Brands</h1>
+      <p class="sub">
+        We design compliant growth engines—content, funnels, and analytics—built with
+        Generative AI and human-in-the-loop review for banks, broker-dealers, and fintech.
+      </p>
+    </section>
 
-  <section>
-    <h2>Team</h2>
-    <p>We have an <strong>in-house Generative AI Developer</strong> driving innovation and responsible AI adoption.</p>
-  </section>
+    <hr>
 
-  <section>
-    <h2>Coming Soon</h2>
-    <p>We are actively preparing our U.S. launch. Stay tuned!</p>
-  </section>
+    <section id="services">
+      <div class="kicker">What we do</div>
+      <h2 class="section-title">Services</h2>
 
-  <footer>
-    <p>&copy; 2025 AImpact Marketing. All rights reserved.</p>
-  </footer>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Generative AI Content Engine</h3>
+          <p>Persona-based content production with policy guards, prompt libraries, and review workflows aligned to FINRA/SEC expectations.</p>
+        </div>
+        <div class="card">
+          <h3>Compliant Marketing Funnels</h3>
+          <p>Acquisition funnels (lead gen → nurture → conversion) designed with disclosures, audit trails, and approval checkpoints.</p>
+        </div>
+        <div class="card">
+          <h3>Analytics Dashboards</h3>
+          <p>Real-time campaign and pipeline visibility; channel attribution and ROI reporting for exec and compliance teams.</p>
+        </div>
+        <div class="card">
+          <h3>Advisory & Enablement</h3>
+          <p>Playbooks, prompt engineering, and team training to operationalize responsible AI across marketing.</p>
+        </div>
+      </div>
+
+      <p class="note" style="margin-top:10px">
+        Team note: we have an <strong>in-house Generative AI Developer</strong> to prototype and ship responsibly.
+      </p>
+    </section>
+
+    <hr>
+
+    <section id="founder">
+      <div class="kicker">Who we are</div>
+      <h2 class="section-title">Founder</h2>
+
+      <div class="founder">
+        <div class="avatar">Your&nbsp;Photo</div>
+        <div>
+          <h3 style="margin:0 0 6px">Jarin Tasnim Noshin</h3>
+          <p style="margin:0 0 14px;max-width:760px">
+            Formerly at Morgan Stanley, HSBC, and BlackRock. I build AI-enabled, compliance-first
+            marketing systems for financial institutions and growth-stage fintechs.
+          </p>
+          <!-- Portfolio link placed immediately after the description -->
+          <p style="margin:0 0 18px">
+            Explore my work: <a href="https://jnoshin.github.io/portfoliowebsite/" target="_blank" rel="noopener">Portfolio Website</a>.
+          </p>
+          <a class="pill" href="mailto:hello@aimpact.marketing">Contact</a>
+          <a class="pill" href="#coming-soon">Coming&nbsp;Soon</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="coming-soon">
+      <div class="kicker">Next</div>
+      <h2 class="section-title">Coming Soon</h2>
+      <p style="max-width:760px">
+        We’re preparing our U.S. launch: incorporation, banking, SOC-2 friendly infra, and our first pilot with a fintech lender.
+        If you’re a bank, RIA, or fintech exploring compliant GenAI marketing, let’s talk.
+      </p>
+    </section>
+
+    <footer id="contact">
+      © <script>document.write(new Date().getFullYear())</script> AImpact Marketing · New York
+      &nbsp;·&nbsp; <a href="mailto:hello@aimpact.marketing">hello@aimpact.marketing</a>
+    </footer>
+  </div>
 </body>
 </html>
